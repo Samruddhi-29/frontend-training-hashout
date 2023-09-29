@@ -57,6 +57,8 @@ header a:hover {
 
 #showcase{
     min-height: 400px;
+    width: 100%;
+    position: relative;
     background-image: url('./images/showcase.jpg');
     background-repeat: no-repeat;
     background-position: 0 -500px;
@@ -64,12 +66,19 @@ header a:hover {
     color: #fff;
 }
 
-#showcase h1{
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
-}
 
+#showcase h1{
+  
+    font-size: 55px;
+   
+}
+#showcase .container {
+    position: absolute;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: auto;
+}
 #showcase p {
     font-size: 20px;
 }
@@ -87,4 +96,8 @@ header a:hover {
 
 #boxes .box img {
     width: 90px;
+}
+
+.clearfix {
+    clear: both;
 }
