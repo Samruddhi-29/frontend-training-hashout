@@ -57,9 +57,13 @@ body{
     grid-column-start: 1 ;
     grid-row-start: 1;
     grid-row-end: 4;
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    padding-top: 10%;
+    
     padding-left: 60px;
     padding-right: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +86,7 @@ body{
     flex: 1;
     /* font-family: 'Inter'; */
     font-weight: 400;
-    text-align:left;
+   
     font-size: 20px;
     color: hsla(0, 0%, 100%, 0.75);
 
@@ -111,3 +115,61 @@ body{
 .purple{
     color: hsl(277, 64%, 61%);
 }
+@media (max-width: 900px) {
+    .cardTitle{
+        font-size: 24px;
+    }
+    .cardDescription{
+        font-size: 17px;
+    }
+    .number , .tag{
+        font-size: 14px;
+    }
+
+  }
+
+
+@media (max-width: 800px) {
+    .cardContainer{
+        height: 100%;
+    
+    }
+    .card {
+      grid-template-columns: 1fr; /* Single column */
+      grid-template-rows: repeat(2,auto);
+      scroll-behavior: smooth;
+      /* padding: 5%; */
+      height: 100%;
+      padding-bottom: 5%;
+    }
+    .cardImage{
+        grid-column-start: 1;
+        grid-row-start:1;
+        grid-row-end: 2;
+        
+    }
+    .cardText{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 0;
+        text-align: center;
+        justify-content: unset;
+    }
+    .cardTitle{
+        padding: 30px;
+        flex: unset;
+    }
+    .cardDescription{
+        flex:unset;
+        padding: 20px;
+    }
+    .figures{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+    }
+    .figureItem{
+        padding: 10px;
+    }
+  }

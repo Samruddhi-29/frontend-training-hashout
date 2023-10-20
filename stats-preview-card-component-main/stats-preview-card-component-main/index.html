@@ -38,14 +38,25 @@
               regarding revenue, customer experience, and overall efficiency.
             </div>
             <div class="figures">
-              <div class="companies"><span class="number">10k+ </span><br><span class="tag">companies</span></div>
-            <div class="templates"><span class="number">314 </span><br><span class="tag">templates</span></div>
-            <div class="queries"><span class="number">12M+ </span><br><span class="tag">queries</span></div>
+              <div class="companies figureItem"><span class="number">10k+ </span><br><span class="tag">companies</span></div>
+            <div class="templates figureItem"><span class="number">314 </span><br><span class="tag">templates</span></div>
+            <div class="queries figureItem"><span class="number">12M+ </span><br><span class="tag">queries</span></div>
             </div>
             
           </div>
           <div class="cardImage">
-            <img src="images/image-header-desktop.jpg" alt="" srcset="" />
+            <picture>
+              <!-- Default image for screens wider than 800px -->
+              <source media="(min-width: 801px)" srcset="images/image-header-desktop.jpg">
+              
+              <!-- Image for screens with a maximum width of 800px -->
+              <source media="(max-width: 800px)" srcset="images/image-header-mobile.jpg">
+              
+              <!-- The fallback image for browsers that don't support the picture element -->
+              <!-- <img src="image-large.jpg" alt="Your Image"> -->
+              <img src="images/image-header-desktop.jpg" alt="" srcset="" />
+            </picture>
+           
           </div>
         </div>
       </div>
