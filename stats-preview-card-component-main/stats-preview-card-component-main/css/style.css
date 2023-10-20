@@ -41,11 +41,15 @@ body{
     grid-column-start: 2 ;
     grid-row-start: 1;
     grid-row-end: 4;
+    background-color: hsla(277, 93%, 39%, 0.927);;
 }
 
 .cardImage img{
     width: 100%;
     height: 100%;
+    
+    opacity: 0.6;
+   
 }
 
 
@@ -53,11 +57,13 @@ body{
     grid-column-start: 1 ;
     grid-row-start: 1;
     grid-row-end: 4;
-    padding: 40px;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 60px;
+   
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -70,14 +76,38 @@ body{
     flex: 1;
 
 }
+
+
 .cardDescription{
     flex: 1;
+    /* font-family: 'Inter'; */
+    font-weight: 400;
+    text-align:left;
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
 
     
 }
 .figures{
     display: grid;
-   
+    padding-bottom: 40px;
     grid-template-columns: repeat(3,auto);
     grid-template-rows: 1;
+}
+
+.number{
+    font-family: 'Inter';
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.tag{
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.purple{
+    color: hsl(277, 64%, 61%);
 }
