@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+    
+      <div class="dateInputBox">
+        <div class="inputField">
+          <label for="day">DAY</label>
+          <input
+            type="number"
+            name="day"
+            id="day"
+            placeholder="DD"
+            min="1"
+            max="31"
+          />
+          <div id="errorDay"></div>
+        </div>
+        <div class="inputField">
+          <label for="month">MONTH</label>
+        <input type="number" name="month" id="month" placeholder="MM" min="1" max="12" />
+        <div id="errorMonth"></div>
+      </div>
+        <div class="inputField">
+          <label for="year">YEAR</label>
+        <input
+        name="year"
+          type="number"
+          id="year"
+          placeholder="YYYY"
+          min="1900"
+          max="2100"
+        />
+        <div id="errorYear"></div>
+      </div>
+      
+      </div>
+      <div class="seperator">
+        <div class="line"></div>
+        <div class="arrow"><img onclick="calculateAge()" src="assets/images/icon-arrow.svg" alt="" srcset=""></div>
+      </div>
+      <div class="resultBox">
+        <div class="result">
+          <div class="blanks"></div><div class="blanks"></div><div class="purple" id="yearsR"></div><div  class="headings">years</div>
+        </div>
+        <div class="result">
+          <div class="blanks"></div><div class="blanks"></div><div class="purple" id="monthsR"></div><div  class="headings">months</div>
+        </div>
+        <div class="result">
+          <div class="blanks"></div><div class="blanks"></div><div class="purple"  id="daysR"></div><div class="headings">days</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
